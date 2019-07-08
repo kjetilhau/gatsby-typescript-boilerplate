@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Typescript Boilerplate`,
     description: `Gatsby Typescript Boilerplate`,
-    author: `Kjetil Haugland`
+    author: `Kjetil Haugland`,
+    siteUrl: `https://www.example.com` // CHANGE ME! Used for sitemap
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -13,6 +14,7 @@ module.exports = {
         path: `${__dirname}/src/images`
       }
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
